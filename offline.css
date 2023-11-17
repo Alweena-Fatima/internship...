@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    background: linear-gradient(-245.29deg, #13ace8 0%, #44648d 28.53%, rgb(64, 97, 206) 75.52%);
+    font-family: 'Special Elite';
+    margin: 0;
+
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 9%;
+    background: linear-gradient(-245.29deg, #50abcf 0%, #44648d 28.53%, rgb(73, 115, 252) 75.52%);
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 1px;
+
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    display: flex;
+    color: rgb(0, 0, 0);
+    margin-left: 40px;
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid black;
+}
+
+#menu-icon {
+    color: black;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.welcome {
+
+    justify-content: center;
+    align-items: center;
+    /* Specifies that the element is a grid container */
+    /* grid-template-columns: repeat(2,1fr); */
+    margin-top: 120px;
+
+    user-select: none;
+    /* Disables user selection for the element */
+    /* use text alignment to align text in center no align items
+    because it will not work with grid layout */
+    text-align: center;
+    /* Aligns the text content to the center */
+    font-size: 24px;
+    /* Sets the font size to 24 pixels */
+    background: transparent;
+    /* Sets the background color to transparent */
+    padding-bottom: 30px;
+
+}
+.social a i {
+    color: black;
+    size: 20px;
+}
+.social a i:hover{
+    color: #ff5722 !important;
+    font-size: 15px;
+
+}
+
+section .game {
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 2px 15px black;
+    border-radius: 10px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* icons */
+.social {
+    display:flex;
+    
+    justify-content: space-evenly;
+}
+.car {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.car p{
+    flex-wrap: wrap;
+}
+
+
+.game {
+    color: white;
+    /* background:black ; */
+    border: 1px solid transparent;
+    /* border-radius: 20px; */
+    padding: 10px 10px;
+    font-size: 12px;
+    line-height: 1.4;
+    transition: all .55s ease;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: flex-start; /* Adjust alignment as needed */
+}
+
+.game:hover {
+    background: skyblue;
+    border: 1px solid white;
+    transform: translateX(5px);
+    color: black;
+    text-transform: uppercase;
+
+
+}
+
+
+/* section{
+    height: auto;
+    width: auto;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    user-select: none;
+} */
+.imgg img {
+    max-width: 250px;
+    height: 200px;
+    padding-right: 20px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    /* Background color of the footer */
+    color: rgb(255, 255, 255);
+    /* Text color of the footer */
+    padding-top: 0px;
+    /* Padding around the content inside the footer */
+    text-align: center;
+    /* Center the content inside the footer */
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    display: flex-end;
+    margin-top: 15px;
+}
+
+
+.icons {
+    /* background: transparent; */
+    background: #333;
+    padding: 15px 0;
+    text-align: center;
+
+    /* border: 10px solid black; */
+}
+
+.icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Your existing styles */
+
+/* Styles for screens up to 768px (tablet) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .navlist {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .navlist a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .game {
+        display: flex;
+    }
+
+
+}
+
+/* Styles for screens up to 480px (phones) */
+@media (max-width: 1300px) {
+    body {
+        width: 92vw;
+    }
+
+    .logo {
+        font-size: 24px;
+        /* Decrease font size for smaller screens */
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: white;
+        padding: 10px 0px;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navlist.active {
+        display: flex;
+    }
+
+    .welcome {
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+
+    }
+    .imgg img {
+        max-width: 100px;
+        height: 100px;
+        padding-right: 10px;
+    }
+
+    /* .container{
+            display: inline;
+            
+        } */
+    .car {
+        flex-direction: column;
+    }
+
+    .game {
+        display: inline;
+        /* padding-bottom: 10px; */
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    footer {
+        width: 96.5vw;
+    }
+
+
+
+}

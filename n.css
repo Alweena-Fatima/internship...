@@ -1,0 +1,292 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body{
+    background: linear-gradient(-245.29deg, #399ac0 0%, #44648d 28.53%, rgb(73, 115, 252) 75.52%);
+      font-family: 'special elite' !important;
+  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-family: 'Space Mono', monospace; */
+}
+header{
+    position:fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 9%;
+    /* background: transparent; */
+    background:linear-gradient(-245.29deg, #399ac0 0%, #44648d 28.53%, rgb(73, 115, 252) 75.52%);
+    border: 1px solid black ;
+    border-radius: 20px;
+    margin-top: 1px;
+    font-family:'special elite';
+    
+
+}
+.car-text{
+    font-style: 'Indie Flower', cursive !important;
+}
+
+.logo{
+    font-size:30px;
+    font-weight: 700;
+    color: black;
+}
+/* body{
+    background-color: skyblue;
+} */
+.navlist{
+    display:flex;
+}
+.navlist a{
+    display: flex;
+    color: black;
+    margin-left: 40px;
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    
+
+}
+.navlist a:hover{
+    border-bottom: 2px solid black;
+    
+}
+#menu-icon{
+    color:black;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.hero {
+    height: auto;
+    width: auto; /* Set the width to 50% of the viewport width */
+    min-height: 100vh;
+    /* background: linear-gradient(-245.29deg, #399ac0 0%, #44648d 28.53%, rgb(73, 115, 252) 75.52%); */
+    position: relative;
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    /* justify-content: space-between; */
+    padding-top: 10px;
+    margin-top: 50px;
+   
+    
+}
+
+
+.hero-image{
+    max-width: 100%; /* Set the maximum width of the image to its parent container */
+    max-height: 100%; /* Set the maximum height of the image to its parent container */
+    width: auto; /* Allow the image to adjust its width according to its aspect ratio */
+    height: auto; /* Allow the image to adjust its height according to its aspect ratio */
+    margin-left:100px;
+    /* user select will remove blicking */
+    user-select: none;
+    
+}
+.hero-text{
+    margin-right: 80px;
+    
+    
+}
+.m:hover{
+    text-decoration: underline;
+   
+}
+.m{
+    color: white;
+    user-select: none;
+}
+
+  
+/* Default styles for larger screens */
+.hero-text h1{
+    color: black;
+    font-family:cursive;
+    /* font-style: italic; */
+    
+  }
+  .hero-text a{
+    display: inline-block;
+    color: white;
+    background:black ;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-size: 12px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    text-decoration: none;
+  }
+  .hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(5px);
+    user-select: none;
+
+  }
+  .hello {
+   
+    text-align: center;
+    /* font-style: italic; */
+    font-family:'special elite';
+   
+    font-size: 24px;
+    background: transparent;
+   
+  
+}
+.choice {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 400px; /* Set a fixed height for the .choice container */
+}
+
+.con-img {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Align items vertically in .con-img */
+    user-select: none;
+}
+.con-img p{
+    font-size: larger;
+
+}
+.icons {
+    /* background: transparent; */
+    background: #333;
+    padding: 15px 0;
+    text-align: center;
+    /* border: 10px solid black; */
+}
+
+.icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.dropdown .btn-primary {
+    background-color: black; /* Set the desired color for the dropdown button text */
+}
+
+
+
+
+
+/* Your existing styles */
+
+/* Styles for screens up to 768px (tablet) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .navlist {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .navlist a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr; /* Change to a single column layout for tablets */
+        text-align: center;
+    }
+
+    .hero-image {
+        margin: 0 auto; /* Center the hero image */
+        margin-bottom: 20px; /* Add space between hero image and text */
+    }
+
+    .hero-text {
+        margin: 0 10px; /* Adjust margins for smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    .hero-text a {
+        font-size: 10px; /* Decrease font size for smaller screens */
+    }
+}
+
+/* Styles for screens up to 480px (phones) */
+@media (max-width: 1300px) {
+    .logo {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    #menu-icon {
+        display: block; /* Show the menu icon on smaller screens */
+    }
+    .hello{
+        padding-top: 20px;
+    }
+    .hero{
+        padding-top: 50px;
+    }
+
+ /* CSS for mobile menu */
+.navlist {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.con-img{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+   
+
+}
+
+
+.navlist.active {
+    display: flex;
+}
+
+
+    .navlist a {
+        margin: 10px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+
+    .hero-text a {
+        font-size: 8px; /* Decrease font size for smaller screens */
+    }
+}
+
+
+  
